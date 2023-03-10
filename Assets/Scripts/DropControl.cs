@@ -66,4 +66,18 @@ public class DropControl : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Fire")
+        {
+            MoveDownDrop();
+            StartCoroutine(DestroyDrop(2, isAnim));
+        }
+    }
+
+    private void MoveDownDrop()
+    {
+        Vector2 vector2 = new Vector2(0, -5);
+        rb.AddForce(vector2, ForceMode2D.Impulse);
+    }
 }

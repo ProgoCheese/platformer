@@ -18,10 +18,10 @@ public class FirebornControl : MonoBehaviour
         {
             //Debug.Log(";k");
             GameManager.instance.playerControl.HitPlayer(damage);
+            animator.SetTrigger("IsAtac");
         }
-        else if(collision.tag == "Drop")
+        else if (collision.tag == "Drop")
         {
-            Destroy(collision.gameObject);
             StartCoroutine(DieFire());
         }
     }
