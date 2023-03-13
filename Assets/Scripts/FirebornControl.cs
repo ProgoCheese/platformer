@@ -14,7 +14,7 @@ public class FirebornControl : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && GameManager.instance.playerControl != null)
+        if (collision.tag == "Player" && GameManager.instance.playerControl != null && !GameManager.instance.IsCloverOn)
         {
             //Debug.Log(";k");
             GameManager.instance.playerControl.HitPlayer(damage);
@@ -26,6 +26,7 @@ public class FirebornControl : MonoBehaviour
         }
         else if (collision.tag == "Seed")
         {
+            animator.SetTrigger("IsAtac");
             Destroy(collision.gameObject);
         }
     }
