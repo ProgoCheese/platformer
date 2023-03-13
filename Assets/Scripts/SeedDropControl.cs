@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class SeedDropControl: MonoBehaviour
 {
-    public Transform spawnPlant;
     public GameObject plant;
     public GameObject drop;
     public Rigidbody2D rb;
@@ -11,8 +10,6 @@ public class SeedDropControl: MonoBehaviour
     public float forseX = 100f;
     public float forseY = 100f;
     public float forseAll = 100f;
-
-    public Transform player;
 
     public Transform GroundCheck;
     public bool isGround = false;
@@ -38,15 +35,19 @@ public class SeedDropControl: MonoBehaviour
         }
 
         rb.AddForce(vector2.normalized * forseAll, ForceMode2D.Impulse);
-        StartCoroutine(DestroyDrop(5));
+        StartCoroutine(DestroyDrop(5,true));
     }
 
-    IEnumerator DestroyDrop(int DestroyTime)
+    IEnumerator DestroyDrop(int DestroyTime,bool checkPlant)
     {
         yield return new WaitForSeconds(DestroyTime);
-        if (!isPlantOn)
+        if (!isPlantOn && checkPlant)
         {
-        Destroy(drop);
+        Destroy(gameObject);
+        }
+        else if (!checkPlant)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -56,8 +57,8 @@ public class SeedDropControl: MonoBehaviour
 
         if (isGround)
         {
-            rb.isKinematic = false;
             plant.SetActive(true);
+            drop.SetActive(false);
         }
     }
 
@@ -66,7 +67,7 @@ public class SeedDropControl: MonoBehaviour
         if (collision.tag == "Fire")
         {
             MoveDownDrop();
-            StartCoroutine(DestroyDrop(2));
+            StartCoroutine(DestroyDrop(1,false));
         }
     }
 

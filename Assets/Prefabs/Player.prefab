@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2976041059057689810, guid: 7271c00af7c561f4da251fcfe62912d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
     m_Bits: 8
   holdPoint: {fileID: 3987973936357475201}
   Drop: {fileID: 7291216510775699821, guid: a44c5ce0b51cc2b40a7c68b4c9dd2ee1, type: 3}
-  SeedDrop: {fileID: 233129547269252225, guid: bfe1aadcec4ed5d4fad4600098e196dc, type: 3}
+  SeedDrop: {fileID: 7309733249873640598, guid: 4eeeea17d38a41f42a906f71bd7a4e06, type: 3}
   isHit: 1
   isHitting: 0
   cloverIcon: {fileID: 8816491639153347765}
