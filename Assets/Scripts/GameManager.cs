@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     
     public bool IsPlayerRigth;
 
+    public bool IsCloverOn;
+
     // Start is called before the first frame update
     void Start()
     {

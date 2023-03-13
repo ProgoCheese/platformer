@@ -22,9 +22,12 @@ public class Player : MonoBehaviour
 
     public Transform holdPoint;
     public GameObject Drop;
+    public GameObject SeedDrop;
 
     public bool isHit = false;
     public bool isHitting = false;
+
+    public GameObject cloverIcon;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +91,16 @@ public class Player : MonoBehaviour
             //    Drop.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwOdject;
             //}
         }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+            Instantiate(SeedDrop, holdPoint);
+
+            //if (Drop.gameObject.GetComponent<Rigidbody2D>() != null)
+            //{
+            //    Drop.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 1) * throwOdject;
+            //}
+        }
 
         if (isHit && !isHitting)
         {
@@ -122,11 +135,20 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
             GameManager.instance.seedCount++;
         }
-        //else if(collision.tag == "Fire")
-        //{
-        //    Debug.Log("df");
-        //    HitPlayer(10);
-        //}
+        else if (collision.tag == "Clover")
+        {
+            Destroy(collision.gameObject);
+            GameManager.instance.IsCloverOn = true;
+            cloverIcon.SetActive(true);
+            StartCoroutine(ToggleClover());
+        }
+    }
+
+    IEnumerator ToggleClover()
+    {
+        yield return new WaitForSeconds(5);
+        GameManager.instance.IsCloverOn = false;
+        cloverIcon.SetActive(false);
     }
 
 }

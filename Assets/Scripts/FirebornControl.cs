@@ -24,6 +24,10 @@ public class FirebornControl : MonoBehaviour
         {
             StartCoroutine(DieFire());
         }
+        else if (collision.tag == "Seed")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     IEnumerator DieFire()
