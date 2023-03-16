@@ -58,6 +58,7 @@ public class SeedDropControl: MonoBehaviour
         if (isGround)
         {
             plant.SetActive(true);
+            isPlantOn = true;
             drop.SetActive(false);
         }
     }

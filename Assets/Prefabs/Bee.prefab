@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4525439999428099060}
   - component: {fileID: 6949670680671704344}
   - component: {fileID: 1243049333746001359}
-  m_Layer: 0
+  - component: {fileID: 7519744458200460282}
+  - component: {fileID: 1184852442485432836}
+  m_Layer: 8
   m_Name: Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 6
   m_Sprite: {fileID: 814782180719799921, guid: 4fa29d6318af46c4b974db9acd985b4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,3 +104,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &7519744458200460282
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550664941123990117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.41
+--- !u!114 &1184852442485432836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550664941123990117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f0e0f2e0fc75b458fc9e509fadcfdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  positionOfPatrol: 1
+  flyingPoint: {fileID: 0}
+  stoppingDistance: 3
+  animator: {fileID: 1243049333746001359}
+  spriteRenderer: {fileID: 6949670680671704344}
+  isGood: 0
+  flightAltitude: 100

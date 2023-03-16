@@ -159,7 +159,7 @@ RectTransform:
   - {fileID: 1314415693}
   - {fileID: 2004921178}
   m_Father: {fileID: 1467768169}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -934,7 +934,7 @@ RectTransform:
   - {fileID: 1172770620}
   - {fileID: 2078467467}
   m_Father: {fileID: 1467768169}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2004,6 +2004,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6140300002a1b844ca00b35ac090c4d3, type: 3}
+--- !u!1 &1008968225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008968226}
+  m_Layer: 0
+  m_Name: point
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008968226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008968225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1255, y: 349, z: 0}
+  m_LocalScale: {x: 140.4, y: 146.88, z: 108}
+  m_Children: []
+  m_Father: {fileID: 1467768169}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1073043943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2601,6 +2631,7 @@ RectTransform:
   m_Children:
   - {fileID: 521942911}
   - {fileID: 1818830796}
+  - {fileID: 1008968226}
   - {fileID: 1136835764}
   - {fileID: 4870920541542379591}
   - {fileID: 20554770}
@@ -3206,7 +3237,7 @@ RectTransform:
   - {fileID: 287068760}
   - {fileID: 1194954431}
   m_Father: {fileID: 1467768169}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3927,25 +3958,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467768169}
     m_Modifications:
+    - target: {fileID: 1184852442485432836, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
+      propertyPath: flyingPoint
+      value: 
+      objectReference: {fileID: 1008968226}
     - target: {fileID: 3550664941123990117, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_Name
       value: Bee
       objectReference: {fileID: 0}
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1257
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 285
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9721.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3974,10 +4009,6 @@ PrefabInstance:
     - target: {fileID: 4525439999428099060, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6949670680671704344, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aff4bd3251754ec4f894ca246d9b8d17, type: 3}
@@ -4104,7 +4135,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1204667896131202276, guid: 70eeaa5fb0a83a3409a70ccde785128b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1204667896131202276, guid: 70eeaa5fb0a83a3409a70ccde785128b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4198,7 +4229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5052028171078262614, guid: 95174a23ef6ea4e4ea33fdf529699334, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5052028171078262614, guid: 95174a23ef6ea4e4ea33fdf529699334, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4340,7 +4371,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7032951922557367821, guid: 3c57c9c692a3ae940bfd1f3258cd73fb, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7032951922557367821, guid: 3c57c9c692a3ae940bfd1f3258cd73fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4463,7 +4494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2294236909851464533, guid: 4eeeea17d38a41f42a906f71bd7a4e06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.877
+      value: 1.669
       objectReference: {fileID: 0}
     - target: {fileID: 2294236909851464533, guid: 4eeeea17d38a41f42a906f71bd7a4e06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4520,7 +4551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3616051380258923797, guid: b5946052b0a1a594f9af59e3b7115d5c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3616051380258923797, guid: b5946052b0a1a594f9af59e3b7115d5c, type: 3}
       propertyPath: m_LocalPosition.x

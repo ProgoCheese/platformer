@@ -8,6 +8,7 @@ TagManager:
   - Drop
   - Fire
   - Clover
+  - PlantBee
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - Drop
   - Player
-  - 
-  - 
+  - Bee
+  - Plant
   - 
   - 
   - 

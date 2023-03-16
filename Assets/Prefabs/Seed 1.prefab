@@ -118,6 +118,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5295977309241034763, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6512728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295977309241034763, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7198624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295977309241034763, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.012253538
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295977309241034763, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.064931184
+      objectReference: {fileID: 0}
     - target: {fileID: 6769848144296729460, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -136,11 +152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6769848144296729460, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 6769848144296729460, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.416
       objectReference: {fileID: 0}
     - target: {fileID: 6769848144296729460, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -180,11 +196,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7444877213167177190, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7444877213167177190, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444877213167177190, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
+      propertyPath: m_TagString
+      value: PlantBee
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ad0eef65e20c74bbb6543e566fdd06, type: 3}
@@ -211,7 +231,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018407002, y: -0.24849582}
+  m_Offset: {x: -0.0072865486, y: -0.28410637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -222,7 +242,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32548657, y: 0.11300838}
+  m_Size: {x: 0.34772748, y: 0.018163681}
   m_EdgeRadius: 0
 --- !u!1001 &4344631333267173436
 PrefabInstance:
