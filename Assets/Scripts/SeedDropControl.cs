@@ -43,7 +43,7 @@ public class SeedDropControl: MonoBehaviour
         yield return new WaitForSeconds(DestroyTime);
         if (!isPlantOn && checkPlant)
         {
-        Destroy(gameObject);
+            Destroy(gameObject);
         }
         else if (!checkPlant)
         {

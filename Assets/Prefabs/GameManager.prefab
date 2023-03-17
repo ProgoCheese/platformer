@@ -53,3 +53,6 @@ MonoBehaviour:
   seedCount: 0
   healhPlayer: 100
   IsPlayerRigth: 0
+  IsCloverOn: 0
+  destroyObjects: []
+  spawnPoint: {fileID: 3090745538570880452, guid: 008813433ee16e844bb59d751fc760e0, type: 3}

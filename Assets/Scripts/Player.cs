@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         isHit = false;
+
     }
 
     // Update is called once per frame
@@ -122,7 +123,7 @@ public class Player : MonoBehaviour
     {
         if (!isHit)
         {
-        Debug.Log("DFsG");
+        //Debug.Log("DFsG");
             isHit = true;
             GameManager.instance.healhPlayer -= hit;
         }
@@ -132,12 +133,12 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Seed")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             GameManager.instance.seedCount++;
         }
         else if (collision.tag == "Clover")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             GameManager.instance.IsCloverOn = true;
             cloverIcon.SetActive(true);
             StartCoroutine(ToggleClover());

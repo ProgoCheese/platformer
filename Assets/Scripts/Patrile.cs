@@ -20,7 +20,7 @@ public class Patrile : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public bool isGood = false;
-    public float flightAltitude = 3f;
+   // public float flightAltitude = 3f;
 
     void Start()
     {
@@ -105,11 +105,11 @@ public class Patrile : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, flyingPoint.position, speed * Time.deltaTime);
     }
 
-    private void FlyOnFlower()
-    {
-        Vector2 endPosition = new Vector2(flyingPoint.position.x, flyingPoint.position.y + flightAltitude);
-        transform.position = Vector2.MoveTowards(transform.position, endPosition, Time.deltaTime * speed);
-    }
+    //private void FlyOnFlower()
+    //{
+    //    Vector2 endPosition = new Vector2(flyingPoint.position.x, flyingPoint.position.y + flightAltitude);
+    //    transform.position = Vector2.MoveTowards(transform.position, endPosition, Time.deltaTime * speed);
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

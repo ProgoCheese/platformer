@@ -9,6 +9,7 @@ public class PlantControl : MonoBehaviour
 
     private void Start()
     {
+        //GameManager.instance.
         animator = GetComponent<Animator>();
     }
 

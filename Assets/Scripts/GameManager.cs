@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     public bool IsCloverOn;
 
+    public LevelManager levelManager;
+
     // Start is called before the first frame update
     void Start()
     {
