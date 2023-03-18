@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
 
     public GameObject cloverIcon;
 
+    public GameObject spawn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -142,6 +144,15 @@ public class Player : MonoBehaviour
             GameManager.instance.IsCloverOn = true;
             cloverIcon.SetActive(true);
             StartCoroutine(ToggleClover());
+        }
+        else if(collision.tag == "Water")
+        {
+            Destroy(collision.gameObject);  
+        }
+        else if(collision.tag == "Abyss")
+        {
+            Debug.Log("1234567890-");
+            transform.position = spawn.transform.position;
         }
     }
 

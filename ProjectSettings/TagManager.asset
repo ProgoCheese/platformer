@@ -9,6 +9,8 @@ TagManager:
   - Fire
   - Clover
   - PlantBee
+  - Water
+  - Abyss
   layers:
   - Default
   - TransparentFX

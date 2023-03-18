@@ -139,4 +139,3 @@ MonoBehaviour:
   animator: {fileID: 1243049333746001359}
   spriteRenderer: {fileID: 6949670680671704344}
   isGood: 0
-  flightAltitude: 100
